@@ -12,12 +12,14 @@ a:link {
   color: #E28743;
 }
 
-/* visited link */
 a:visited {
   color: #EAB676;
 }
 
-/* mouse over link */
 a:hover {
   color:#EEEEE4;
+}
+
+.popup-arrow {
+  color: #E28743;
 }

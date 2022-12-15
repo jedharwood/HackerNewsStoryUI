@@ -1,6 +1,7 @@
 import React from 'react';
 import { Story } from '../api/Fetch';
 import styled from 'styled-components';
+import { InfoSvg } from './InfoSvg';
 
 const StoryContainer = styled.div`
   display: flex;
@@ -31,7 +32,7 @@ interface Props {
 }
 
 export const StoryComponent = (props: Props) => {
-  const { order, url, title, by } = props.story;
+  const { order, url, title, by, score, kids } = props.story;
   return (
     <StoryContainer>
       <Order>{order}</Order>
@@ -40,6 +41,7 @@ export const StoryComponent = (props: Props) => {
           {title}
         </a>
       </HyperLink>
+      <InfoSvg author={by} score={score} comments={kids} />
     </StoryContainer>
   );
 };

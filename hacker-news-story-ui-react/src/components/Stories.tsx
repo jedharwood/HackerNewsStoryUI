@@ -17,6 +17,6 @@ export const Stories = () => {
     }, []);
     
     return <div>{stories.map((story: Story) => {
-        return (<StoryComponent story={story} />)
+        return (<StoryComponent story={story} key={story.id} />)
     })}</div>;
 }
