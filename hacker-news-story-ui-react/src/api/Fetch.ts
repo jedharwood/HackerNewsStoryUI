@@ -1,13 +1,10 @@
 export interface Story {
-    // by: string;
-    // descendants: number;
+    by: string;
     id: number;
-    // kids: number[];
-    // score: number;
-    // time: number;
+    kids: number[];
+    score: number;
     title: string;
-    // type: string;
-    // url: string;
+    url: string;
     order: number;
 }
   
