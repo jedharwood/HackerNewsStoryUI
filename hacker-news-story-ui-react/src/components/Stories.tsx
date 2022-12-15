@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getStories, Story } from '../api/Fetch';
+import { StoryComponent } from "./StoryComponent";
 
 export const Stories = () => {
     const [stories, setStories] = useState<Story[]>([]);
@@ -15,7 +16,7 @@ export const Stories = () => {
         getStoriesAsync();
     }, []);
     
-    return <ul>{stories.map((s: Story) => {
-        return (<li>{s.title}</li>)
-    })}</ul>;
+    return <div>{stories.map((story: Story) => {
+        return (<StoryComponent story={story} />)
+    })}</div>;
 }

@@ -13,6 +13,7 @@ const Section = styled.section`
   max-width: 75%;
   margin: auto;
   background-color: #154C79;
+  padding: 0px 20px 1px 20px;
 `;
 
 export const App = () => {

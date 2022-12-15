@@ -1,5 +1,5 @@
 export interface Story {
-    // by: string;
+    by: string;
     // descendants: number;
     id: number;
     // kids: number[];
@@ -7,7 +7,7 @@ export interface Story {
     // time: number;
     title: string;
     // type: string;
-    // url: string;
+    url: string;
     order: number;
 }
   

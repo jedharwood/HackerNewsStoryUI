@@ -3,3 +3,21 @@ body {
   color: #EEEEE4;
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #E28743;
+}
+
+/* visited link */
+a:visited {
+  color: #EAB676;
+}
+
+/* mouse over link */
+a:hover {
+  color:#EEEEE4;
+}
