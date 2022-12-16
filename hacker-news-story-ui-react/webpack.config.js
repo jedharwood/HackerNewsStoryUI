@@ -23,7 +23,7 @@ module.exports = {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
-    ]
+    ],
   },
   devtool: prod ? undefined : 'source-map',
   plugins: [
