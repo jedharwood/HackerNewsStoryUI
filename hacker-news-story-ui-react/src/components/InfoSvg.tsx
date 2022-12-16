@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styled from 'styled-components';
 import Popup from 'reactjs-popup';
 
@@ -37,7 +37,7 @@ const infoSvg = (
   </svg>
 );
 
-export const InfoSvg = (props: Props): JSX.Element => {
+export const InfoSvg = memo((props: Props): JSX.Element => {
   const { author, score, comments } = props;
   const commentCount = comments ? comments.length : 0;
 
@@ -52,4 +52,4 @@ export const InfoSvg = (props: Props): JSX.Element => {
       </Popup>
     </SvgContainer>
   );
-};
+});
