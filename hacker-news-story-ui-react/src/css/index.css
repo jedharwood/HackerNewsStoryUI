@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  color: #EEEEE4;
+  color: #eeeee4;
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
@@ -9,17 +9,17 @@ a {
 }
 
 a:link {
-  color: #E28743;
+  color: #e28743;
 }
 
 a:visited {
-  color: #EAB676;
+  color: #eab676;
 }
 
 a:hover {
-  color:#EEEEE4;
+  color: #eeeee4;
 }
 
 .popup-arrow {
-  color: #E28743;
+  color: #e28743;
 }
