@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 interface Props {
   heading: string;
@@ -14,14 +14,8 @@ const Heading = styled.h1`
   margin: 10px;
 `;
 
-export const Header = ({ heading }: Props) => (
+export const Header = ({ heading }: Props): JSX.Element => (
   <HeaderContainer>
-      <Heading>{heading}</Heading>
+    <Heading>{heading}</Heading>
   </HeaderContainer>
 );
-
-
-
-
-
-

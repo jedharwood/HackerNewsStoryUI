@@ -7,7 +7,7 @@ const StoryContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  border: 2px solid #E28743;
+  border: 2px solid #e28743;
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 10px 0px;
@@ -31,7 +31,7 @@ interface Props {
   story: Story;
 }
 
-export const StoryComponent = (props: Props) => {
+export const StoryComponent = (props: Props): JSX.Element => {
   const { order, url, title, by, score, kids } = props.story;
   return (
     <StoryContainer>
