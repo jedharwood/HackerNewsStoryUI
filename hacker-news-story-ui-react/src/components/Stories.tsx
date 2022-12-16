@@ -1,25 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import { getStories, Story } from '../api/Fetch';
+import React from 'react';
+import { Story } from '../api/Fetch';
 import { StoryComponent } from './StoryComponent';
 
-export const Stories = (): JSX.Element => {
-  const [stories, setStories] = useState<Story[]>([]);
+interface Props {
+  stories: Story[];
+}
 
-  useEffect(() => {
-    const getStoriesAsync = async () => {
-      try {
-        const result = await getStories();
-        setStories(result);
-      } catch (e) {
-        console.log(e);
-      }
-    };
-    getStoriesAsync();
-  }, []);
-
+export const Stories = (props: Props): JSX.Element => {
   return (
     <div>
-      {stories.map((story: Story) => {
+      {props.stories.map((story: Story) => {
         return <StoryComponent story={story} key={story.id} />;
       })}
     </div>
