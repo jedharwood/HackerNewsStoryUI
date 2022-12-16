@@ -1,11 +1,10 @@
 import React from 'react';
-import { Story } from '../api/Fetch';
 import styled from 'styled-components';
+import { Story } from '../api/Fetch';
 import { InfoSvg } from './InfoSvg';
 
 const StoryContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   border: 2px solid #e28743;
   border-radius: 10px;
@@ -17,13 +16,11 @@ const Order = styled.div`
   font-size: 32px;
   flex: 0 0 60px;
   text-align: center;
-  vertical-align: middle;
   padding: 5px;
 `;
 
 const HyperLink = styled.div`
   font-size: 20px;
-  align-self: center;
   flex: 1;
 `;
 
